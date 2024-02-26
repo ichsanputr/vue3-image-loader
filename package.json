@@ -22,9 +22,6 @@
       "require": "./dist/style.css"
     }
   },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@ichsanputr"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/ichsanputr/vue3-image-loader"
