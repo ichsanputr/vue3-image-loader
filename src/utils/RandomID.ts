@@ -7,3 +7,19 @@ export default function generateRandomId() {
 
     return randomId
 }
+
+/*
+export default function generateRandomId(){
+  const chars="ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789"
+  const rn=[Math.random(),Math.random()].map(r=>Math.floor(r*((256**4)-1)))
+  let randomID=''
+  for(let i=0; i<rn.length; i++){
+    let bs=0
+    for(let j=0; j<4; j++){
+      randomID+=chars.charAt(Math.abs((rn[i]>>bs)%chars.length))
+      bs+=8
+    }
+  }
+  return randomID
+}
+*/
