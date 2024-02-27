@@ -9,13 +9,7 @@
 	"main": "./dist/vue3-loader-image.umd.cjs",
 	"module": "./dist/vue3-loader-image.js",
 	"types": "./dist/main.d.ts",
-	"exports": {
-		".": {
-			"import": "./dist/vue3-loader-image.js",
-			"require": "./dist/vue3-loader-image.umd.js",
-			"types": "./dist/main.d.ts"
-		}
-	},
+	"style": "./dist/style.css",
 	"scripts": {
 		"build": "vite build && vue-tsc --declaration --emitDeclarationOnly"
 	},
