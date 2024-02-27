@@ -12,8 +12,8 @@ export default defineConfig({
     build: {
         lib: {
             entry: resolve(__dirname, 'src/main.ts'),
-            name: 'Vue3ImageLoader',
-            fileName: 'vue3-image-loader'
+            name: 'Vue3LoaderImage',
+            fileName: 'vue3-loader-image'
         },
         rollupOptions: {
           external: ['vue'],

@@ -1,18 +1,18 @@
 {
-	"name": "vue3-image-loader",
+	"name": "vue3-loader-image",
 	"version": "1.0.0",
 	"description": "Vue3 package for showing loader while image loading, with default skeleton",
 	"type": "module",
 	"files": [
 		"dist"
 	],
-	"main": "./dist/vue3-image-loader.umd.cjs",
-	"module": "./dist/vue3-image-loader.js",
+	"main": "./dist/vue3-loader-image.umd.cjs",
+	"module": "./dist/vue3-loader-image.js",
 	"types": "./dist/main.d.ts",
 	"exports": {
 		".": {
-			"import": "./dist/vue3-image-loader.js",
-			"require": "./dist/vue3-image-loader.umd.js",
+			"import": "./dist/vue3-loader-image.js",
+			"require": "./dist/vue3-loader-image.umd.js",
 			"types": "./dist/main.d.ts"
 		}
 	},
