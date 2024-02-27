@@ -1,6 +1,6 @@
 {
 	"name": "vue3-loader-image",
-	"version": "1.0.0",
+	"version": "1.1.0",
 	"description": "Vue3 package for showing loader while image loading, with default skeleton",
 	"type": "module",
 	"files": [
