@@ -41,16 +41,16 @@ export default defineComponent({
 We can use delay props to increase the time the image will be displayed, because sometimes the loader doesn't come out because the internet speed is good during the loading process.
 
 ```vue
-    <VueLoaderImage delay="4000" src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?q=80&w=1973" width="300px" height="300px"></VueLoaderImage>
+<VueLoaderImage delay="4000" src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?q=80&w=1973" width="300px" height="300px"></VueLoaderImage>
 ```
 That's will be show image after image loaded plus 4 second.
 
 Beside skeleton loader you also can use custom css loader like using slot like this.
 
 ```vue
-    <VueLoaderImage delay="4000" src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?q=80&w=1973" width="300px" height="300px">
-        <div class="loader"/>
-    </VueLoaderImage>
+<VueLoaderImage delay="4000" src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?q=80&w=1973" width="300px" height="300px">
+  <div class="loader"/>
+</VueLoaderImage>
 ```
 
 See more css loader on [https://css-loaders.com/](https://css-loaders.com/).
