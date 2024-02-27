@@ -23,6 +23,18 @@ const props = defineProps<{
     longdesc?: string
 }>()
 
+function loadedImage() {
+    if (props.delay) {
+        setTimeout(() => {
+            showImage.value = true
+        }, parseInt(props.delay!));
+
+        return
+    }
+
+    showImage.value = true
+}
+
 onMounted(async () => {
     dynamicId.value.containerCustomLoader = 'container-' + generateRandomId()
     dynamicId.value.img = 'container-' + generateRandomId()
@@ -58,11 +70,6 @@ onMounted(async () => {
     if (props.pill) {
         img!.style.borderRadius = props.pill
     }
-
-    setTimeout(() => {
-        showImage.value = true
-        console.log(999)
-    }, parseInt(props.delay!));
 })
 </script>
 
@@ -73,7 +80,7 @@ onMounted(async () => {
         </div>
         <div v-else-if="!showImage && !$slots.default" :id="dynamicId.skeleton" />
         <img :alt="props.alt" :crossorigin="props.crossorigin" :loading="props.loading" :longdesc="props.longdesc"
-            style="object-fit: cover" :id="dynamicId.img" v-show="showImage" :src="props.src" />
+            style="object-fit: cover" :id="dynamicId.img" v-show="showImage" @load="loadedImage" :src="props.src" />
     </div>
 </template>
 <style>
