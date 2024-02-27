@@ -1,54 +1,46 @@
 {
-  "files": [
-    "dist",
-    "src/components/"
-  ],
-  "keywords": [
-    "vue3 image loader",
-    "vue skeleton",
-    "vue loader"
-  ],
-  "private": false,
-  "main": "./dist/vue3-image-loader.umd.cjs",
-  "module": "./dist/vue3-image-loader.js",
-  "types": "./dist/index.d.ts",
-  "exports": {
-    ".": {
-      "import": "./dist/vue3-image-loader.js",
-      "require": "./dist/vue3-image-loader.umd.cjs"
-    },
-    "./dist/style.css": {
-      "import": "./dist/style.css",
-      "require": "./dist/style.css"
-    }
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ichsanputr/vue3-image-loader"
-  },
-  "scripts": {
-    "dev": "vite",
-    "build": "vite build",
-    "serve": "vite preview --port 5050",
-    "typecheck": "vue-tsc --noEmit",
-    "preview": "vite preview"
-  },
-  "name": "@ichsanputr/vue3-image-loader",
-  "version": "1.0.0",
-  "type": "module",
-  "peerDependencies": {
-    "vue": "^3.0.0"
-  },
-  "dependencies": {
-    "vue": "^3.2.45"
-  },
-  "devDependencies": {
-    "@types/node": "^18.11.18",
-    "@vitejs/plugin-vue": "^4.0.0",
-    "path": "^0.12.7",
-    "typescript": "^4.9.3",
-    "vite": "^4.0.0",
-    "vite-plugin-dts": "^3.7.3",
-    "vue-tsc": "^1.0.11"
-  }
+	"name": "vue3-image-loader",
+	"version": "1.0.0",
+	"description": "Vue3 package for showing loader while image loading, with default skeleton",
+	"type": "module",
+	"files": [
+		"dist"
+	],
+	"main": "./dist/vue3-image-loader.umd.cjs",
+	"module": "./dist/vue3-image-loader.js",
+	"types": "./dist/main.d.ts",
+	"exports": {
+		".": {
+			"import": "./dist/vue3-image-loader.js",
+			"require": "./dist/vue3-image-loader.umd.js",
+			"types": "./dist/main.d.ts"
+		}
+	},
+	"scripts": {
+		"build": "vite build && vue-tsc --declaration --emitDeclarationOnly"
+	},
+	"devDependencies": {
+		"@types/node": "^20.4.10",
+		"@vitejs/plugin-vue": "^4.2.3",
+		"@vue/test-utils": "^2.4.1",
+		"path": "^0.12.7",
+		"vite": "^4.0.0",
+		"vitest": "^0.32.2",
+		"vue-tsc": "^1.8.8"
+	},
+	"peerDependencies": {
+		"vue": "^3.0.0"
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ichsanputr/vue3-image-loader"
+	},
+	"keywords": [
+		"vue 3",
+    "vue loader",
+    "vue image loader",
+    "vue skeleton loader"
+	],
+	"author": "Muhammad Ichsanul Fadhil",
+	"license": "ISC"
 }

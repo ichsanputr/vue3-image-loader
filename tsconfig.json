@@ -1,18 +1,33 @@
 {
-  "compilerOptions": {
-    "target": "ESNext",
-    "useDefineForClassFields": true,
-    "module": "ESNext",
-    "moduleResolution": "Node",
-    "strict": true,
-    "jsx": "preserve",
-    "resolveJsonModule": true,
-    "isolatedModules": true,
-    "esModuleInterop": true,
-    "lib": ["ESNext", "DOM"],
-    "skipLibCheck": true,
-    "noEmit": true
-  },
-  "include": ["src/**/*.ts", "src/**/*.d.ts", "src/**/*.vue"],
-  "references": [{ "path": "./tsconfig.node.json" }]
+	"compilerOptions": {
+		"target": "ESNext",
+        "useDefineForClassFields": true,
+		"module": "ESNext",
+		"moduleResolution": "Node",
+		"strict": true,
+		"jsx": "preserve",
+        "sourceMap": true,
+        "resolveJsonModule": true,
+		"isolatedModules": true,
+		"esModuleInterop": true,
+        "lib": ["ESNext", "DOM"],
+		"skipLibCheck": true,
+        "declaration": true,
+        "outDir": "./dist",
+
+		"forceConsistentCasingInFileNames": true /* Ensure that casing is correct in imports. */,
+		"noImplicitAny": true /* Enable error reporting for expressions and declarations with an implied 'any' type. */,
+		"strictNullChecks": true /* When type checking, take into account 'null' and 'undefined'. */,
+		"alwaysStrict": true /* Ensure 'use strict' is always emitted. */,
+		"noFallthroughCasesInSwitch": true /* Enable error reporting for fallthrough cases in switch statements. */,
+		"paths": {
+			"@/*": ["./src/*"]
+		},
+	},
+	"include": [
+        "./src/**/*.ts",
+        "./src/**/*.d.ts",
+        "./src/**/*.vue",
+         "./tests"
+        ]
 }

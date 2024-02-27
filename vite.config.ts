@@ -1,28 +1,27 @@
 import { defineConfig } from "vite";
 import vue from "@vitejs/plugin-vue";
-import * as path from "path";
-import dts from "vite-plugin-dts";
+import {resolve} from 'path'
 
 export default defineConfig({
-    plugins: [vue(), dts()],
+	plugins: [vue()],
+	resolve: {
+		alias: {
+			"@": resolve(__dirname, "src"),
+		},
+	},
     build: {
         lib: {
-            entry: path.resolve(__dirname, "src/index.ts"),
-            name: "Vue3ImageLoader",
-            fileName: "vue3-image-loader"
+            entry: resolve(__dirname, 'src/main.ts'),
+            name: 'Vue3ImageLoader',
+            fileName: 'vue3-image-loader'
         },
         rollupOptions: {
-            external: ["vue"],
-            output: {
-                globals: {
-                    vue: "Vue"
-                }
+          external: ['vue'],
+          output: {
+            globals: {
+              vue: 'Vue'
             }
+          }
         }
-    },
-    resolve: {
-        alias: {
-            "@": path.resolve(__dirname, "src")
-        }
-    }
+      }
 });
