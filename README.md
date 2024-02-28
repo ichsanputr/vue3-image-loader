@@ -1,6 +1,6 @@
 # Vue 3 Image Loader
 
-![Vue 3 image loader preview](https://s6.ezgif.com/tmp/ezgif-6-e0deabb98e.gif)
+![Vue 3 image loader preview](https://i.ibb.co/wCfzGp8/ezgif-1-4b6f9e880f.gif)
 
 Vue 3 package for showing a loader while an image loading with default using skeleton loader.
 
