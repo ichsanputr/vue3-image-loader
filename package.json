@@ -1,6 +1,6 @@
 {
 	"name": "vue3-loader-image",
-	"version": "1.1.2",
+	"version": "1.1.3",
 	"description": "Vue3 package for showing loader while image loading, with default skeleton",
 	"type": "module",
 	"files": [
@@ -31,9 +31,9 @@
 	},
 	"keywords": [
 		"vue 3",
-    "vue loader",
-    "vue image loader",
-    "vue skeleton loader"
+		"vue loader",
+		"vue image loader",
+		"vue skeleton loader"
 	],
 	"author": "Muhammad Ichsanul Fadhil",
 	"license": "ISC"
