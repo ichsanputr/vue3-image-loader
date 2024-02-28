@@ -48,25 +48,30 @@ That's will be show image after image loaded plus 4 second.
 Beside skeleton loader you also can use custom css loader like using slot like this.
 
 ```vue
+<template>
 <VueLoaderImage delay="4000" src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?q=80&w=1973" width="300px" height="300px">
   <div class="loader"/>
 </VueLoaderImage>
+</template>
+<style>
+// loader css animation & style here
+</style>
 ```
 
-See more css loader on [https://css-loaders.com/](https://css-loaders.com/).
+See more css loader on [https://css-loaders.com](https://css-loaders.com/).
 
 ## Props
 
 | Attribute    |   Type   |    Is Required     | Description                                                                   |
 |:-------------|:--------:|:--------------:|:------------------------------------------------------------------------------|
 | src      |  String  |       true       | Image source url which will be displayed                                               |
-| width         |  String  |   true    | Width of image, accpeting all unit measured (1px, 1rem, 1%, etc)                      |
+| width         |  String  |   true    | Width of image, accepting all unit measurentment (1px, 1rem, 1%, etc)                      |
 | height     |  String  | true | Same like width |
 | delay     |  String  |     no     | Image will be show after loaded plus delay value        |
 | circle  | Boolean  |     no     | Border radius 100%                                                |
 | pill      | String |       no       | Border radius custom value    
 | alt      | String |       no       | --
 | crossorigin      | String |       no       | --
-| loading      | String, eager or lazy |       no       | --
+| loading      | String |       no       | --
 | longdesc      | String |       no       | --
 
