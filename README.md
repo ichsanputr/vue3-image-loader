@@ -1,16 +1,19 @@
 # Vue 3 Image Loader
 
-Vue 3 package for showing a loader while an image loading with default using skeleton loader, see video below for demo.
+![Vue 3 image loader preview](https://s6.ezgif.com/tmp/ezgif-6-e0deabb98e.gif)
 
-https://github.com/ichsanputr/vue3-image-loader/assets/69036480/4296e70b-8780-41da-9d52-4ed765bfaef6
+Vue 3 package for showing a loader while an image loading with default using skeleton loader.
 
-## Usage
-
-### Installation
+## Installation
 
 ```bash
 npm install vue-loader-image
+
+// or use yarn
+yarn add vue-loader-image
 ```
+
+## Usage
 
 ### Importing
 
