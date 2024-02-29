@@ -7,10 +7,10 @@ Vue 3 package for showing a loader while an image loading with default using ske
 ## Installation
 
 ```bash
-npm install vue-loader-image
+npm install vue3-loader-image
 
 // or use yarn
-yarn add vue-loader-image
+yarn add vue3-loader-image
 ```
 
 ## Usage
