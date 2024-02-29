@@ -2,7 +2,7 @@
 <p align="left">
 <a href="https://www.npmjs.com/package/vue-navigation-bar"><img src="https://img.shields.io/bundlephobia/minzip/vue3-loader-image"
 </a>
-  <a href="https://www.npmjs.com/package/vue-navigation-bar"><img src="https://img.shields.io/npm/dm/vue3-loader-image.svg" alt="NPM Downloads"></a>
+  <a href="https://www.npmjs.com/package/vue-navigation-bar"><img src="https://img.shields.io/npm/dt/vue3-loader-image.svg" alt="NPM Downloads"></a>
   <a href="http://opensource.org/licenses/MIT"><img src="https://img.shields.io/badge/license-MIT-blue.svg" alt="License"></a>
   
 </p>
